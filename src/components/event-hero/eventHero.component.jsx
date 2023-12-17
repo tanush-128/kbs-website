@@ -18,11 +18,11 @@ const EventHero = () => {
                     </div>
                 </div>
                 <div class="text-center">
-                    <h1 class="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-gray-200">
+                    <h1 class="text-4xl sm:text-6xl font-bold text-gray-200">
                         Upcoming & Past Events
                     </h1>
 
-                    <p class="mt-3 text-gray-600 dark:text-gray-400">
+                    <p class="mt-3 text-gray-400">
                         Join us on a journey of discovery and collaboration at the forefront of web3 technology.
                     </p>
                 </div>
