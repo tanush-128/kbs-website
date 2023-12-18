@@ -20,7 +20,7 @@ const EventHero = () => {
                     </div>
                 </div>
                 <div class="text-center">
-                    <h1 class="text-4xl sm:text-6xl font-bold text-gray-200">
+                    <h1 class="text-4xl sm:text-6xl font-bold text-white">
                         Upcoming & Past Events
                     </h1>
 

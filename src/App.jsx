@@ -1,4 +1,6 @@
 import './App.css';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import IndexRoute from './routes/index/index.route';
 import Navagation from './components/navAndFooter/nav-and-footer.component';
@@ -10,14 +12,24 @@ import SignIn from './components/authentication/sign-in.component';
 import SignUp from './components/authentication/sign-up.component';
 
 const App = () => {
+  const location = useLocation();
+  useEffect(() => {
+    require('preline/preline');
+  }, []);
+
+  useEffect(() => {
+    // eslint-disable-next-line no-undef
+    HSStaticMethods.autoInit();
+  }, [location.pathname]);
+
   return (
     <Routes>
       <Route path="/" element={<Navagation />} >
         <Route index element={<IndexRoute />} />
         <Route path='events' element={<EventRoute />} />
-        <Route path='team' element={<OurTeam />} />
         <Route path='blogs' element={<BlogsRoute />} />
         <Route path='blogs/:id' element={<BlogPage />} />
+        <Route path='team' element={<OurTeam />} />
         <Route path='signin' element={<SignIn />} />
         <Route path='signup' element={<SignUp />} />
       </Route>

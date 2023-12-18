@@ -18,7 +18,7 @@ const HomeComponent = () => {
 
 
                 <div class="mt-5 max-w-3xl text-center mx-auto">
-                    <p class="text-lg text-gray-400 ">A society run by students promoting the use of web3 technologies <br /> Chaining up the Blocks of IIT KGP</p>
+                    <p class="text-lg text-gray-400 ">GM Everyone!</p>
                 </div>
 
                 <div class="gap-3 flex justify-center">
