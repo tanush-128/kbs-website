@@ -28,7 +28,7 @@ const EventsContainer = () => {
                         CryptoCraft: Navigating the Blockchain Frontier
                     </h3>
                     <p class="mt-1 text-sm text-gray-400">
-                    Join us for an immersive workshop series, exploring the intricacies and innovation of blockchain technology. Unleash your crypto curiosity!
+                        Join us for an immersive workshop series, exploring the intricacies and innovation of blockchain technology. Unleash your crypto curiosity!
                     </p>
                     <button type="button" class="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent   hover:shadow-sm disabled:opacity-50 disabled:pointer-events-none text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600">
                         <img class="flex-shrink-0 w-4 h-4 rounded-full" src="https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8auto=format&fit=facearea&facepad=3&w=320&h=320&q=80" alt="Image Description" />
@@ -61,10 +61,10 @@ const EventsContainer = () => {
 
                 <div class="grow p-2 pb-8">
                     <h3 class="flex gap-x-1.5 font-semibold text-white">
-                    "Web3 Nexus: Bridging Realities, Transforming Futures
+                        "Web3 Nexus: Bridging Realities, Transforming Futures
                     </h3>
                     <p class="mt-1 text-sm text-gray-400">
-                    A convergence of minds and ideas, where web3 enthusiasts connect to shape the decentralized future. Explore, learn, and innovate.
+                        A convergence of minds and ideas, where web3 enthusiasts connect to shape the decentralized future. Explore, learn, and innovate.
                     </p>
                     <button type="button" class="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-400 hover:shadow-sm disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600">
                         <span class="flex flex-shrink-0 justify-center items-center w-4 h-4  border text-[10px] font-semibold uppercase  rounded-full bg-gray-800 border-gray-700 text-gray-400">
@@ -82,9 +82,9 @@ const EventsContainer = () => {
                 <a class="absolute inset-0 z-[1]" href="#"></a>
 
 
-                <div class="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700 dark:group-hover:after:bg-gray-600">
+                <div class="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-700 group-hover:after:bg-gray-600">
                     <div class="relative z-10 w-7 h-7 flex justify-center items-center">
-                        <div class="w-2 h-2 rounded-full bg-white border-2 border-gray-300 group-hover:border-gray-600 dark:bg-gray-800 dark:border-gray-600"></div>
+                        <div class="w-2 h-2 rounded-full  border-2  group-hover:border-gray-600 bg-gray-800 border-gray-600"></div>
                     </div>
                 </div>
 
@@ -92,10 +92,10 @@ const EventsContainer = () => {
 
                 <div class="grow p-2 pb-8">
                     <h3 class="flex gap-x-1.5 font-semibold text-white">
-                    Token Symphony: Orchestrating the Future of Decentralized Finance
+                        Token Symphony: Orchestrating the Future of Decentralized Finance
                     </h3>
                     <p class="mt-1 text-sm text-gray-400">
-                    Harmony in the decentralized realm. A symphony of discussions and workshops, exploring the vast landscape of tokenomics and decentralized finance.
+                        Harmony in the decentralized realm. A symphony of discussions and workshops, exploring the vast landscape of tokenomics and decentralized finance.
                     </p>
                     <button type="button" class="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-400 hover:shadow-sm disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600">
                         <span class="flex flex-shrink-0 justify-center items-center w-4 h-4  border text-[10px] font-semibold uppercase  rounded-full bg-gray-800 border-gray-700 text-gray-400">
@@ -110,7 +110,7 @@ const EventsContainer = () => {
 
 
             <div class="ps-2 my-2 first:mt-0">
-                <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-gray-400">
+                <h3 class="text-xs font-medium uppercase text-gray-400">
                     31 Jul, 2023
                 </h3>
             </div>
@@ -121,19 +121,19 @@ const EventsContainer = () => {
                 <a class="absolute inset-0 z-[1]" href="#"></a>
 
 
-                <div class="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-gray-700 dark:group-hover:after:bg-gray-600">
+                <div class="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 after:bg-gray-700 group-hover:after:bg-gray-600">
                     <div class="relative z-10 w-7 h-7 flex justify-center items-center">
-                        <div class="w-2 h-2 rounded-full bg-white border-2 border-gray-300 group-hover:border-gray-600 dark:bg-gray-800 dark:border-gray-600"></div>
+                        <div class="w-2 h-2 rounded-full  border-2 group-hover:border-gray-600 bg-gray-800 border-gray-600"></div>
                     </div>
                 </div>
 
 
 
                 <div class="grow p-2 pb-8">
-                    <h3 class="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
+                    <h3 class="flex gap-x-1.5 font-semibold text-white">
                         Founding of the Society
                     </h3>
-                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+                    <p class="mt-1 text-sm text-gray-400">
                         Some Enthusiast people founded the society.
                     </p>
                 </div>
