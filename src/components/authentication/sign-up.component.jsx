@@ -18,7 +18,7 @@ const SignUp = () => {
                             </div>
 
                             <div class="mt-5">
-                                <button type="button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                <button type="button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  shadow-sm disabled:opacity-50 disabled:pointer-events-none bg-slate-900 border-gray-700 text-white hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600">
                                     <svg class="w-4 h-auto" width="46" height="47" viewBox="0 0 46 47" fill="none">
                                         <path d="M46 24.0287C46 22.09 45.8533 20.68 45.5013 19.2112H23.4694V27.9356H36.4069C36.1429 30.1094 34.7347 33.37 31.5957 35.5731L31.5663 35.8669L38.5191 41.2719L38.9885 41.3306C43.4477 37.2181 46 31.1669 46 24.0287Z" fill="#4285F4" />
                                         <path d="M23.4694 47C29.8061 47 35.1161 44.9144 39.0179 41.3012L31.625 35.5437C29.6301 36.9244 26.9898 37.8937 23.4987 37.8937C17.2793 37.8937 12.0281 33.7812 10.1505 28.1412L9.88649 28.1706L2.61097 33.7812L2.52296 34.0456C6.36608 41.7125 14.287 47 23.4694 47Z" fill="#34A853" />
@@ -28,16 +28,16 @@ const SignUp = () => {
                                     Sign up with Google
                                 </button>
 
-                                <div class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">Or</div>
+                                <div class="py-3 flex items-center text-xs uppercase before:flex-[1_1_0%] before:border-t before:border-gray-600 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-600 after:ms-6 text-gray-500">Or</div>
 
 
                                 <form>
                                     <div class="grid gap-y-4">
 
                                         <div>
-                                            <label for="email" class="block text-sm mb-2 dark:text-white">Email address</label>
+                                            <label for="email" class="block text-sm mb-2 text-white">Email address</label>
                                             <div class="relative">
-                                                <input type="email" id="email" name="email" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-green-500 focus:ring-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="email-error" />
+                                                <input type="email" id="email" name="email" class="py-3 px-4 block w-full border-gray-700 rounded-lg text-sm focus:border-green-500 focus:ring-green-500 disabled:opacity-50 disabled:pointer-events-none bg-slate-900 text-gray-400 focus:ring-gray-600" required aria-describedby="email-error" />
                                                 <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
                                                     <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                                                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
@@ -50,9 +50,9 @@ const SignUp = () => {
 
 
                                         <div>
-                                            <label for="password" class="block text-sm mb-2 dark:text-white">Password</label>
+                                            <label for="password" class="block text-sm mb-2 text-white">Password</label>
                                             <div class="relative">
-                                                <input type="password" id="password" name="password" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-green-500 focus:ring-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="password-error" />
+                                                <input type="password" id="password" name="password" class="py-3 px-4 block w-full border-gray-700 rounded-lg text-sm focus:border-green-500 focus:ring-green-500 disabled:opacity-50 disabled:pointer-events-none bg-slate-900 text-gray-400 focus:ring-gray-600" required aria-describedby="password-error" />
                                                 <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
                                                     <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                                                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
@@ -65,9 +65,9 @@ const SignUp = () => {
 
 
                                         <div>
-                                            <label for="confirm-password" class="block text-sm mb-2 dark:text-white">Confirm Password</label>
+                                            <label for="confirm-password" class="block text-sm mb-2 text-white">Confirm Password</label>
                                             <div class="relative">
-                                                <input type="password" id="confirm-password" name="confirm-password" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-green-500 focus:ring-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="confirm-password-error" />
+                                                <input type="password" id="confirm-password" name="confirm-password" class="py-3 px-4 block w-full border-gray-700 rounded-lg text-sm focus:border-green-500 focus:ring-green-500 disabled:opacity-50 disabled:pointer-events-none bg-slate-900 text-gray-400 focus:ring-gray-600" required aria-describedby="confirm-password-error" />
                                                 <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
                                                     <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                                                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
@@ -80,15 +80,15 @@ const SignUp = () => {
 
                                         <div class="flex items-center">
                                             <div class="flex">
-                                                <input id="remember-me" name="remember-me" type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-green-600 pointer-events-none focus:ring-green-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-800" />
+                                                <input id="remember-me" name="remember-me" type="checkbox" class="shrink-0 mt-0.5 border-gray-700 rounded text-green-600 pointer-events-none focus:ring-green-500 bg-gray-800 checked:bg-green-500 checked:border-green-500 focus:ring-offset-gray-800" />
                                             </div>
                                             <div class="ms-3">
-                                                <label for="remember-me" class="text-sm dark:text-white">I accept the <a class="text-green-600 decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Terms and Conditions</a></label>
+                                                <label for="remember-me" class="text-sm text-white">I accept the <a class="text-green-600 decoration-2 hover:underline font-medium focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">Terms and Conditions</a></label>
                                             </div>
                                         </div>
 
 
-                                        <button type="submit" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-green-600 text-white hover:bg-green-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Sign up</button>
+                                        <button type="submit" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-green-600 text-white hover:bg-green-700 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600">Sign up</button>
                                     </div>
                                 </form>
 

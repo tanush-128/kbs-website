@@ -74,7 +74,7 @@ const Navagation = () => {
                                 <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">About us</a></p>
                                 <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">Blog</a></p>
                                 <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">Careers</a> <span class="inline ms-1 text-xs bg-green-700 text-white py-1 px-2 rounded-lg">We're hiring</span></p>
-                                <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">Customers</a>textdark</p>
+                                <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">Customers</a></p>
                             </div>
                         </div>
 
