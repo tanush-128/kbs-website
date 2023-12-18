@@ -8,8 +8,8 @@ const IndexRoute = () => {
     return (
         <div>
             <HomeComponent />
-            <HomeImages />
             <About />
+            <HomeImages />
             <Fyq />
             <NewsLetter />
         </div>

@@ -1,9 +1,9 @@
 const Fyq = () => {
     return (
-        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-44">
             <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-                <h2 class="text-2xl font-bold md:text-3xl md:leading-tight text-gray-200">
-                    Your <span className=" font-medium text-green-400">questions</span>. Our <span className="font-medium text-green-400">answer</span>.
+                <h2 class="text-5xl font-bold  md:leading-tight text-gray-200">
+                    Your <span className=" text-green-400">Questions</span>. <br /> Our <span className=" text-green-400">Answers</span>.
                 </h2>
             </div>
 
@@ -69,12 +69,9 @@ const Fyq = () => {
                             We offer refunds. We aim high at being focused on building relationships with our clients and community.
                         </p>
                     </div>
-
                 </div>
-
             </div>
         </div>
-
     )
 }
 

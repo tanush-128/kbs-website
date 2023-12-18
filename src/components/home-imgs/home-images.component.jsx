@@ -1,7 +1,8 @@
 const HomeImages = () => {
 
     return (
-        <div class="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-44">
+             <h1 class="block text-5xl font-bold  md:text-5xl lg:text-6xl text-white  mb-10 text-center ">Don't Worry.<span className="font-boult text-green-400"> <br />Decentralization</span> is Easy.</h1>
             <div class="grid sm:grid-cols-12 gap-6">
                 <div class="sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3">
                     <a class="group relative block rounded-xl overflow-hidden focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
