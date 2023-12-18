@@ -1,6 +1,8 @@
 const EventHero = () => {
     return (
-        <div class="relative overflow-hidden mt-20">
+        <div class="relative overflow-hidden pt-20 before:absolute before:top-0 before:start-1/2 
+        before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
+        before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')]" >
             <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8  sm:py-24">
                 <div class="mt-7 sm:mt-12 mx-auto max-w-xl relative">
                     <div class="hidden md:block absolute top-0 end-0 -translate-y-12 translate-x-20">
