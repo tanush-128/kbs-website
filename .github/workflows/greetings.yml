@@ -13,9 +13,10 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: |
-          Hello there! 👋 Thank you for opening your first issue on this repository.
-
-          We appreciate your contribution and are here to help. Please provide detailed information about the issue you're facing or the improvement you'd like to suggest. The KBS community is eager to collaborate with you!
+          GM from KBS, I am GitHub Actions Bot! 👋 
+          Thank you for opening your first issue on this repository.
+          
+          We appreciate your contribution and are here to help. Please provide detailed information about the issue you're facing or the improvement you'd like to suggest. The KBS community is eager to collaborate with you! If you are trying to solve the issue go through [installation guide](./docs/installation.md).
 
           If you have any questions or need guidance, feel free to ask. Happy coding! 🚀
         pr-message: |
