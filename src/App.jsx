@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
+
 import IndexRoute from './routes/index/index.route';
 import Navagation from './components/navAndFooter/nav-and-footer.component';
 import EventRoute from './routes/events/events.route';
