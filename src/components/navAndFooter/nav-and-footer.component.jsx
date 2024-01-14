@@ -27,7 +27,6 @@ const Navagation = () => {
         navigate('/signin');
     }
     
-
     return (
         <Fragment>
             <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0">
