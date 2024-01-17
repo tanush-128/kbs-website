@@ -1,4 +1,11 @@
+import {  useNavigate } from 'react-router-dom';
+
 const SignUp = () => {
+    const navigate = useNavigate();
+    const redirectToSignIn = () => {
+        navigate("/signin");
+    }
+
     return (
         <div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
@@ -11,9 +18,9 @@ const SignUp = () => {
                                 <h1 class="block text-2xl font-bold text-gray-800 text-white">Sign up</h1>
                                 <p class="mt-2 text-sm text-gray-400">
                                     Already have an account?
-                                    <a class="text-green-600 decoration-2 hover:underline font-medium focus:outline-none focus:ring-1 focus:ring-gray-600" href="/signin">
+                                    <button class="text-green-600 decoration-2 hover:underline font-medium focus:outline-none focus:ring-1 focus:ring-gray-600" onClick={redirectToSignIn}>
                                         Sign in here
-                                    </a>
+                                    </button>
                                 </p>
                             </div>
 
