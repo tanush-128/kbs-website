@@ -45,8 +45,10 @@ const Navagation = () => {
                         <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
                             <button class="font-medium text-gray-400  md:py-6 hover:text-gray-500" onClick={redirectToHome} aria-current="page">
                                 Home
+
                             </button>
                             <button class="font-medium text-gray-400  md:py-6 hover:text-gray-500" onClick={redirectToAbout}>
+
                                 About
                             </button>
                             <button class="font-medium text-gray-400  md:py-6 hover:text-gray-500" onClick={redirectToEvents}>
