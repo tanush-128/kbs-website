@@ -21,7 +21,7 @@ const Navagation = () => {
                             <a class="font-medium text-gray-400  md:py-6 hover:text-gray-500" href="/" aria-current="page">
                                 Home
                             </a>
-                            <a class="font-medium text-gray-400  md:py-6 hover:text-gray-500" href="#about">
+                            <a class="font-medium text-gray-400  md:py-6 hover:text-gray-500" href="/about">
                                 About
                             </a>
                             <a class="font-medium text-gray-400  md:py-6 hover:text-gray-500" href="/events">
