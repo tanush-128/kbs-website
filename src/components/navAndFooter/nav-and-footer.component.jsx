@@ -8,7 +8,7 @@ const Navagation = () => {
         navigate('/');
     }
     const redirectToAbout = () => {
-        navigate('/#about');
+        navigate('/about');
     }
 
     const redirectToEvents = () => {
