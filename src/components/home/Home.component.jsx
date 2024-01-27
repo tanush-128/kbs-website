@@ -22,7 +22,7 @@ const HomeComponent = () => {
                 </div>
 
                 <div class="gap-3 flex justify-center">
-                    <div class="mt-4 sm:mt-5">
+                    <div class="mt-4 sm:mt-5 flex justify-center flex-wrap">
                         <a class="
                         m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700  shadow-sm hover:bg-gray-800 disabled:opacity-50 disabled:pointer-events-none bg-slate-900 text-white focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
                             <svg class="flex-shrink-0 w-3 h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
