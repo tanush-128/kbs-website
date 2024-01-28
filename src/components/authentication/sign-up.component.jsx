@@ -15,7 +15,7 @@ const SignUp = () => {
                     <div class="mt-7 border rounded-xl shadow-sm bg-gray-800 border-gray-700">
                         <div class="p-4 sm:p-7">
                             <div class="text-center">
-                                <h1 class="block text-2xl font-bold text-gray-800 text-white">Sign up</h1>
+                                <h1 class="block text-2xl font-bold text-white">Sign up</h1>
                                 <p class="mt-2 text-sm text-gray-400">
                                     Already have an account?
                                     <button class="text-green-600 decoration-2 hover:underline font-medium focus:outline-none focus:ring-1 focus:ring-gray-600" onClick={redirectToSignIn}>
