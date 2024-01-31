@@ -57,11 +57,11 @@ function NotFound() {
               </button>
               <button
                 onClick={redirectToHome}
-                className="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-100 dark:hover:text-gray-100 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                className="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-green-400 hover:text-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-green-400 dark:hover:text-green-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 href="../examples.html"
               >
                 <svg
-                  className="flex-shrink-0 w-4 h-4 text-gray-100"
+                  className="flex-shrink-0 w-4 h-4 text-green-400"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
