@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 
 import IndexRoute from './routes/index/index.route';
-import Navagation from './components/navAndFooter/nav-and-footer.component';
 import EventRoute from './routes/events/events.route';
 import OurTeam from './routes/ourTeam/our-team.route';
 import BlogsRoute from './routes/allBlogs/blogs.route';
@@ -13,6 +12,7 @@ import SignIn from './components/authentication/sign-in.component';
 import SignUp from './components/authentication/sign-up.component';
 import AboutRoute from './routes/about/about.route.jsx';
 import ErrorRoute from "./routes/notFound/ErrorRoute.jsx"
+import Template from './templates/template.component.jsx';
 
 const App = () => {
   const location = useLocation();
@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<Navagation />} >
+      <Route path="/" element={<Template/>} >
         <Route index element={<IndexRoute />} />
         <Route path='events' element={<EventRoute />} />
         <Route path='blogs' element={<BlogsRoute />} />
