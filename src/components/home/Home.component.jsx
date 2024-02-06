@@ -7,7 +7,6 @@ const HomeComponent = () => {
                 <div class="mt-20 max-w-3xl text-center mx-auto">
                     <h1 class="block font-bold text-6xl md:text-5xl lg:text-8xl text-gray-100">
                         Kharagpur <br />
-
                         <span class="bg-clip-text bg-gradient-to-tl from-green-800 to-green-400 text-transparent">
                             Blockchain
                         </span>
@@ -23,8 +22,7 @@ const HomeComponent = () => {
 
                 <div class="gap-3 flex justify-center">
                     <div class="mt-4 sm:mt-5 flex justify-center flex-wrap">
-                        <a class="
-                        m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700  shadow-sm hover:bg-gray-800 disabled:opacity-50 disabled:pointer-events-none bg-slate-900 text-white focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
+                        <a class="m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700  shadow-sm hover:bg-gray-800 disabled:opacity-50 disabled:pointer-events-none bg-slate-900 text-white focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
                             <svg class="flex-shrink-0 w-3 h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
                             </svg>
