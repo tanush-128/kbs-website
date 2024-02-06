@@ -94,7 +94,7 @@ const SignIn = () => {
 
                                         <div className="flex items-center">
                                             <div className="flex">
-                                                <input id="remember-me" name="remember-me" type="checkbox" className="shrink-0 mt-0.5  rounded text-green-600 pointer-events-none focus:ring-green-500 bg-gray-800 border-gray-700 checked:bg-green-500 checked:border-green-500 focus:ring-offset-gray-800" />
+                                                <input id="remember-me" name="remember-me" type="checkbox" className="shrink-0 mt-0.5  rounded text-green-600 pointer-events-none focus:ring-green-500 bg-gray-800 border-gray-700 checked:bg-green-500 checked:border-green-500 focus:ring-offset-gray-800"/>
                                             </div>
                                             <div className="ms-3">
                                                 <label for="remember-me" className="text-sm text-white">Remember me</label>

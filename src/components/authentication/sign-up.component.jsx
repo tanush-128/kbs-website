@@ -17,8 +17,13 @@ const SignUp = () => {
     const handleSignUp = async (e) => {
         e.preventDefault();
         try{
-            const data = await createUserWithEmailAndPassword(database,email,password);
-            redirectToSignIn();
+            if(password === confirmPassword){
+                const data = await createUserWithEmailAndPassword(database,email,password);
+                redirectToSignIn();
+            } else {
+                alert("Password and Confirm Password should be same")
+                return
+            }
         } catch(err) {
             console.log(err.message);
         }   
