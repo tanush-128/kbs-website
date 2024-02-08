@@ -1,13 +1,14 @@
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState } from "react";
 import { database } from "./FirebaseConfig";
 import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 const SignUp = () => {
 
-    const [email,setEmail] = useState("");
-    const [password,setPassword] = useState("");
-    const [confirmPassword,setConfirmedPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmedPassword] = useState("");
 
     const navigate = useNavigate();
     const redirectToSignIn = () => {
@@ -16,17 +17,46 @@ const SignUp = () => {
 
     const handleSignUp = async (e) => {
         e.preventDefault();
-        try{
-            if(password === confirmPassword){
-                const data = await createUserWithEmailAndPassword(database,email,password);
-                redirectToSignIn();
+        try {
+            if (password === confirmPassword) {
+                await createUserWithEmailAndPassword(database, email, password);
+                toast.success('Account successfully created, please signin now!', {
+                    position: "bottom-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
             } else {
-                alert("Password and Confirm Password should be same")
-                return
+                toast.error('Passwords are not matching', {
+                    position: "bottom-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
+                return;
             }
-        } catch(err) {
+        } catch (err) {
+            toast.error('Account already exists!', {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
             console.log(err.message);
-        }   
+        }
     }
 
     return (
@@ -34,6 +64,19 @@ const SignUp = () => {
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
         before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')]">
             <div className="flex h-full items-center py-16">
+                <ToastContainer
+                    position="bottom-right"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                    transition="Bounce"
+                />
                 <div className="w-full max-w-md mx-auto p-6">
                     <div className="mt-7 border rounded-xl shadow-sm bg-gray-800 border-gray-700">
                         <div className="p-4 sm:p-7">

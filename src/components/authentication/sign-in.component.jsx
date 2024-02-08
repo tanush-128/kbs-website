@@ -1,27 +1,45 @@
 import { useNavigate } from "react-router-dom";
-import {useState} from "react";
+import { useState } from "react";
 import { database } from "./FirebaseConfig";
 import { signInWithEmailAndPassword } from 'firebase/auth'
+import { ToastContainer, toast } from "react-toastify";
 
 const SignIn = () => {
-    const [email,setEmail] = useState("");
-    const [password,setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     const navigate = useNavigate();
     const redirectToSignUp = () => {
         navigate("/signup");
     };
-    const redirectToHome = () => {
-        navigate("/")
-    }
+
 
     const handleSignIn = async (e) => {
         e.preventDefault();
-        try{
-            const data = await signInWithEmailAndPassword(database,email,password);
-            redirectToHome();
-        } catch(err) {
+        try {
+             await signInWithEmailAndPassword(database, email, password);
+            toast.success('successfully signed in', {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+        } catch (err) {
             console.log(err.message);
-        }   
+            toast.error('Something went wrong, please try again!', {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+        }
     }
 
     return (
@@ -29,15 +47,28 @@ const SignIn = () => {
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
         before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')]">
             <body className="bg-black-900 flex h-full items-center py-16">
+                <ToastContainer
+                    position="bottom-right"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                    transition="Bounce"
+                />
                 <main className="w-full max-w-md mx-auto p-6">
                     <div className="mt-7  border  rounded-xl shadow-sm bg-gray-800 border-gray-700">
                         <div className="p-4 sm:p-7">
                             <div className="text-center">
                                 <h1 className="block text-2xl font-bold text-white">Sign in</h1>
                                 <p className="mt-2 text-sm text-gray-400">
-                                    Don't have an account yet? 
+                                    Don't have an account yet?
                                     <button className="text-green-600 decoration-2 hover:underline font-medium focus:outline-none focus:ring-1 focus:ring-gray-600" onClick={redirectToSignUp}>
-                                         Sign up here
+                                        Sign up here
                                     </button>
                                 </p>
                             </div>
@@ -94,7 +125,7 @@ const SignIn = () => {
 
                                         <div className="flex items-center">
                                             <div className="flex">
-                                                <input id="remember-me" name="remember-me" type="checkbox" className="shrink-0 mt-0.5  rounded text-green-600 pointer-events-none focus:ring-green-500 bg-gray-800 border-gray-700 checked:bg-green-500 checked:border-green-500 focus:ring-offset-gray-800"/>
+                                                <input id="remember-me" name="remember-me" type="checkbox" className="shrink-0 mt-0.5  rounded text-green-600 pointer-events-none focus:ring-green-500 bg-gray-800 border-gray-700 checked:bg-green-500 checked:border-green-500 focus:ring-offset-gray-800" />
                                             </div>
                                             <div className="ms-3">
                                                 <label for="remember-me" className="text-sm text-white">Remember me</label>
