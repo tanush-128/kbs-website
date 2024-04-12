@@ -13,7 +13,7 @@ Welcome to the KBS Website! This project is designed to...
 
 ## Installation
 
-For detailed instructions on how to set up the project on your local machine, please refer to the [Installation Guide](docs/installation.md).
+For detailed instructions on how to set up the project on your local machine, please refer to the [Installation Guide](https://github.com/Swarnendu0123/kbs-website/blob/main/docs/installation.md).
 
 ## Usage
 

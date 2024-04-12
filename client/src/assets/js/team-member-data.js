@@ -5,13 +5,13 @@ export const teamMembers = [
         id: uuidv4(),
         name: 'Prakhar Jain',
         position: 'Founder and Governor',
-        image: 'https://media.licdn.com/dms/image/D4D03AQEmNCpU0_Ov0g/profile-displayphoto-shrink_800_800/0/1689282795544?e=1710979200&v=beta&t=JWUe3HOhMu-_0vmJtezo_nJJHNTFCzf-sP9AAt8UKIw',
+        image: "https://media.licdn.com/dms/image/D4D03AQEmNCpU0_Ov0g/profile-displayphoto-shrink_800_800/0/1689282795544?e=1718236800&v=beta&t=TbAJg2vZviMdeKtoqilbp0l4lZ2dbsbH9YvyRTuKTQs",
     },
     {
         id: uuidv4(),
         name: 'Nishim Goyal',
         position: 'Tech Head',
-        image: 'https://media.licdn.com/dms/image/D4D03AQG1owURAkSVOw/profile-displayphoto-shrink_400_400/0/1670824938562?e=1710979200&v=beta&t=G1x-2xnTXlrB9Hh3O9nzTcDdbE0QmcOJV_y4D_MU_pE',
+        image: 'https://media.licdn.com/dms/image/D4D03AQEiAsPXBLmk1w/profile-displayphoto-shrink_800_800/0/1705922390324?e=1718236800&v=beta&t=lasLekAUvhUNLDH0_DghWeDxphmJz9Zt8tv4U8ZeY7E',
     },
     {
         id: uuidv4(),
