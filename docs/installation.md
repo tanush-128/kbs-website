@@ -88,5 +88,4 @@ npm run dev
 ```
 
 
-
-This command will start the development server. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+Now you can access the KBS Website at [http://localhost:3000](http://localhost:3000). and the server at [http://localhost:8000](http://localhost:8000).
