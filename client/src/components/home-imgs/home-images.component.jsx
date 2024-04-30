@@ -20,8 +20,7 @@ const HomeImages = () => {
             <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
               <img
                 class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
-                src="https://media.licdn.com/dms/image/D4D22AQEnLdxTcEk_7A/feedshare-shrink_800/0/1699362072653?e=1709164800&v=beta&t=AtybnT0UJL6mYDXjwkJMWjO5OBPEym1TcgrOnB0_fLM"
-                alt="Image Description"
+                src="https://media.licdn.com/dms/image/D4D22AQEyNmdqOvEs3g/feedshare-shrink_2048_1536/0/1689543245624?e=1717632000&v=beta&t=1izBbn_eox52wh7gqFeBEhaETsNPydFWNC80VPGxkXI"
               />
             </div>
             <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
@@ -40,7 +39,7 @@ const HomeImages = () => {
             <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
               <img
                 class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
-                src="https://media.licdn.com/dms/image/D4D22AQHr5M4iNNKO2w/feedshare-shrink_1280/0/1699362072524?e=1709164800&v=beta&t=GOeL25SJZH2ya9f51yg1XESLlNrgWyoODrnKF5ApfP0"
+                src="https://media.licdn.com/dms/image/D4D22AQEtrdKDm4CFgQ/feedshare-shrink_1280/0/1689338564735?e=1717632000&v=beta&t=u3GBB2bxG8nu8kzGErD5nh-648Lytuony-lu3qThy_U"
                 alt="Image Description"
               />
             </div>
@@ -61,7 +60,7 @@ const HomeImages = () => {
             <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
               <img
                 class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
-                src="https://media.licdn.com/dms/image/D4D22AQFH9D-tKsfmIg/feedshare-shrink_1280/0/1699362071526?e=1709164800&v=beta&t=Ft014nlHJKVBl7FwFOo9pFoIra7SjZzWEgD7giDXTvc"
+                src="https://media.licdn.com/dms/image/D4D22AQG6yc21kywZew/feedshare-shrink_2048_1536/0/1689543250394?e=1717632000&v=beta&t=fZb0YNsT7f4_1yhOExdEHstiwyfyiRyhrUED-T7wwgw"
                 alt="Image Description"
               />
             </div>
@@ -81,7 +80,7 @@ const HomeImages = () => {
             <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
               <img
                 class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
-                src="https://media.licdn.com/dms/image/D4D22AQGyOdhLvAgJbA/feedshare-shrink_1280/0/1699362071467?e=1709164800&v=beta&t=P8FhNetxh0fyAYBvtvyfCZCVmn791VzdFvxyGhaD-HQ"
+                src="https://media.licdn.com/dms/image/D4D22AQFIxiW1J5mAZQ/feedshare-shrink_2048_1536/0/1689928985958?e=1717632000&v=beta&t=hKoD6UC44LC14Yy1LXaO0zUoPljFCHERlTRXuxxQB7Y"
                 alt="Image Description"
               />
             </div>
@@ -101,7 +100,7 @@ const HomeImages = () => {
             <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
               <img
                 class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
-                src="https://media.licdn.com/dms/image/D4D22AQHr5M4iNNKO2w/feedshare-shrink_1280/0/1699362072524?e=1709164800&v=beta&t=GOeL25SJZH2ya9f51yg1XESLlNrgWyoODrnKF5ApfP0"
+                src="https://media.licdn.com/dms/image/D4D22AQHJKhnB31icRQ/feedshare-shrink_2048_1536/0/1692269999486?e=1717632000&v=beta&t=2U8pHDB9Eckv6ex1itLOYeTEbyTnijj8POW1J5GWVTc"
                 alt="Image Description"
               />
             </div>

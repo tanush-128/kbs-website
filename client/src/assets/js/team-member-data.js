@@ -17,80 +17,80 @@ export const teamMembers = [
         id: uuidv4(),
         name: 'Sameer Sen',
         position: 'Tech Head',
-        image:'https://media.licdn.com/dms/image/D5635AQG_TyGZTGDUeA/profile-framedphoto-shrink_400_400/0/1686219881496?e=1706353200&v=beta&t=yWdNf1kWi3-H6jjTk7mxGSZDsEUhytop8Vv_yYdJHfk',
+        image:'https://media.licdn.com/dms/image/D5603AQGVGQZhdI4CBg/profile-displayphoto-shrink_400_400/0/1670174480922?e=1720051200&v=beta&t=UwdRf7jGQ69QUaEt7-l2xGUlEWhTmvG75AT4zXJ67sA',
     },
     {
         id: uuidv4(),
         name: 'Suvojit Das',
         position: 'Research Head',
-        image: 'https://media.licdn.com/dms/image/C4D03AQEtbKnOFzNsKA/profile-displayphoto-shrink_400_400/0/1662714171862?e=1710979200&v=beta&t=qOf5faqHOReW9UaySl-GMChOdeWAH6m9WS7qYfrYZJU',
+        image: 'https://media.licdn.com/dms/image/C4D03AQEtbKnOFzNsKA/profile-displayphoto-shrink_100_100/0/1662714171862?e=1720051200&v=beta&t=aAXjTJ8qjufXJdkAHSk8s-YT5sE7DqwGtV3rvoMVy1c',
     },
     {
         id: uuidv4(),
         name: 'Ayush Kumar',
         position: 'Research Head',
-        image: 'https://media.licdn.com/dms/image/C4E03AQHrUAS8VrBrUw/profile-displayphoto-shrink_400_400/0/1646669084752?e=1710979200&v=beta&t=mSKLSgWhhQLXLpLzAuLx1iJzWOK_HCTLaaHGCrQKYas',
+        image: 'https://media.licdn.com/dms/image/C4E03AQHrUAS8VrBrUw/profile-displayphoto-shrink_100_100/0/1646669084752?e=1720051200&v=beta&t=OBYQ2e5r35yae-7DICaN_1Hdcc_UVqNaKHbda8PTg20',
     },
     {
         id: uuidv4(),
         name: 'Avhinav Prakash',
         position: 'Research Head',
-        image: 'https://media.licdn.com/dms/image/D4D03AQHSziJ7mYv1ng/profile-displayphoto-shrink_400_400/0/1700513786377?e=1710979200&v=beta&t=w8wIoXkpKzAkGhr-rqWi_62dlDYjIkOo86cJIJgT0hg',
+        image: 'https://media.licdn.com/dms/image/D4D03AQHSziJ7mYv1ng/profile-displayphoto-shrink_100_100/0/1700513786377?e=1720051200&v=beta&t=YuKBVyRJR7Sqlfxa2XTGUPT4SgpzamukjnrxCeMDpLw',
     },
     {
         id: uuidv4(),
         name: 'SSVKSS Jyothiraditya',
         position: 'Operations Head',
-        image: 'https://media.licdn.com/dms/image/D4D03AQGGNC7Boszwzg/profile-displayphoto-shrink_400_400/0/1693933196454?e=1710979200&v=beta&t=2C5woGxFXT_AAxHZXPTndhiUh3lXV5_XUDkjwyY0ZSI',
+        image: 'https://media.licdn.com/dms/image/D4D03AQGGNC7Boszwzg/profile-displayphoto-shrink_100_100/0/1693933196453?e=1720051200&v=beta&t=XQOI9o24g1LGl1eH6GOErzOvvWaJjD0l7I9Fb9hlmkE',
     },
     {
         id: uuidv4(),
         name: 'Diptendu Sarkar',
         position: 'Operations Head',
-        image: 'https://media.licdn.com/dms/image/D5603AQG59fnQtZC2CQ/profile-displayphoto-shrink_400_400/0/1699418634718?e=1710979200&v=beta&t=Vj6DmvmvcVFqMWpjuUoOaQiDpFjAJhxOfxqjG0kQpEQ',
+        image: 'https://media.licdn.com/dms/image/D5603AQG59fnQtZC2CQ/profile-displayphoto-shrink_100_100/0/1699418634718?e=1720051200&v=beta&t=rTGzeNyYKZGgohyaP61nc0yaQZ4UMF60HV-4kSUBeT8',
     },
     {
         id: uuidv4(),
         name: 'Ojas Deshmukh',
         position: 'Advisor',
-        image: 'https://media.licdn.com/dms/image/D4D03AQG-sGUYlgrtVg/profile-displayphoto-shrink_400_400/0/1683029542554?e=1710979200&v=beta&t=LmKA766cUCuFKjHH2VncdLxMKCIKwXZ8fnSD30RlaD8'
+        image: 'https://media.licdn.com/dms/image/D4D03AQG-sGUYlgrtVg/profile-displayphoto-shrink_100_100/0/1683029542554?e=1720051200&v=beta&t=BnQX7AeihbbeBpw1Ro_bT_8VSJesUbTGGLrjaxgZTSE'
     },
     {
         id: uuidv4(),
         name: 'Atharva Amritkar',
         position: 'Advisor',
-        image: 'https://media.licdn.com/dms/image/D5603AQHMYDpv2bitJQ/profile-displayphoto-shrink_400_400/0/1697629171889?e=1710979200&v=beta&t=pLackuhSAnLgwkH90VbrV6j9ewwtXpZmCG7q9-wsos4' 
+        image: 'https://media.licdn.com/dms/image/D5603AQFBphMWz-XDBg/profile-displayphoto-shrink_100_100/0/1710759831112?e=1720051200&v=beta&t=MgNY60MqG07xRtoQjB5qJZjMe5MesOb2PUP717qXKy8' 
     },
     
     {
         id: uuidv4(),
         name: 'Druhin Abrol',
         position: 'Advisor',
-        image: 'https://media.licdn.com/dms/image/C4D03AQGcujsS-ytERw/profile-displayphoto-shrink_400_400/0/1657125333796?e=1710979200&v=beta&t=3kqPLHhhXanBObNmJR2H1mAxfQ8RtpGCdTdSPxr0UNk' 
+        image: 'https://media.licdn.com/dms/image/C4D03AQGcujsS-ytERw/profile-displayphoto-shrink_100_100/0/1657125333796?e=1720051200&v=beta&t=qP33hzRToFbwSoILsg6CqMYamzgoWohn7HhBdaPG6aE' 
     },
     {
         id: uuidv4(),
         name: 'Mohith Suresh',
         position: 'Advisor',
-        image: 'https://media.licdn.com/dms/image/D5603AQG52bhVoao_dg/profile-displayphoto-shrink_400_400/0/1675325390577?e=1710979200&v=beta&t=7iTt9NJeUT92eJny9tk2lnAhqB70YwFCkk8umYYBYJ0' 
+        image: 'https://media.licdn.com/dms/image/D5603AQHiWe_N33CIyw/profile-displayphoto-shrink_400_400/0/1708708525163?e=1720051200&v=beta&t=2ivxtiDz6CvJYm0v_WLE3Jrmthbp4Y826Ak-5VRfOTY' 
     },
     {
         id: uuidv4(),
         name: 'Samarth Singh',
         position: 'Advisor',
-        image: 'https://media.licdn.com/dms/image/D4D03AQHCK6JVZCkcEw/profile-displayphoto-shrink_400_400/0/1701879771081?e=1710979200&v=beta&t=6iL8IWRmZ0JbgTzkoM4tasMN4k5ZynjOmVysZbTFoNc' 
+        image: 'https://media.licdn.com/dms/image/D4D03AQHCK6JVZCkcEw/profile-displayphoto-shrink_100_100/0/1701879771081?e=1720051200&v=beta&t=NaTYNMBY2-lAL-CEuIt6T1JsN-qmWO4x3_jbsZq9fqA' 
     },
     {
         id: uuidv4(),
         name: 'Soham Sen',
         position: 'Advisor',
-        image: 'https://media.licdn.com/dms/image/D5603AQFGKSbjYXZNoQ/profile-displayphoto-shrink_400_400/0/1676197360514?e=1710979200&v=beta&t=9AMB0_2ht7AD_fzEdNA6qHmfcERRwYd9UbrTjGaQx3s' 
+        image: 'https://media.licdn.com/dms/image/D5603AQFGKSbjYXZNoQ/profile-displayphoto-shrink_100_100/0/1676197360514?e=1720051200&v=beta&t=23UFWxlwoKiMVeMXO9GdFUELWVojrOJaCtt4YwtQFV0' 
     },
     {
         id: uuidv4(),
         name: 'Tushar Kanwaria',
         position: 'Advisor',
-        image: 'https://media.licdn.com/dms/image/D4D03AQG4cHFiRaCU7g/profile-displayphoto-shrink_400_400/0/1676022600040?e=1710979200&v=beta&t=UdoAUpW9pmGFTgKxmHK7Cz6VQ2K9Vk68KS8vRG3-0mk' 
+        image: 'https://media.licdn.com/dms/image/D4D03AQG4cHFiRaCU7g/profile-displayphoto-shrink_100_100/0/1676022600040?e=1720051200&v=beta&t=EDRZHyhlZtIhGYJPH7hRrxavWjy-oDXm_SCIWw50gao' 
     },
 
 ]
