@@ -15,7 +15,7 @@ const SignUp = () => {
 
     const handleSignUp = async () => {
         // e.preventDefault();
-       signIn("credentials", {
+       await signIn("credentials", {
             email,
             password,
             redirect: false,

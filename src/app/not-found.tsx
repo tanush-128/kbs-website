@@ -32,7 +32,7 @@ function NotFound() {
               Oops, something went wrong.
             </p>
             <p className="text-gray-100 dark:text-white">
-              Sorry, we couldn't find your page.
+              Sorry, we couldn&apos;t find your page.
             </p>
             <div className="mt-5 flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-3">
               <button
@@ -52,7 +52,7 @@ function NotFound() {
                 GitHub repo
               </button>
               <Link
-               
+
                 className="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-green-400 hover:text-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-green-400 dark:hover:text-green-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 href="../examples.html"
               >

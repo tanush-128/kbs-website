@@ -2,7 +2,7 @@ const HomeImages = () => {
   return (
     <div className="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-44">
       <h1 className="block text-5xl font-bold  md:text-5xl lg:text-6xl text-white  mb-10 text-center ">
-        Don't Worry.
+        Don&apos;t Worry.
         <span className="font-boult text-green-400">
           {" "}
           <br />

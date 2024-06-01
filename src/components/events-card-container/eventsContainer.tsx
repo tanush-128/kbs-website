@@ -61,7 +61,7 @@ const EventsContainer = () => {
 
                 <div className="grow p-2 pb-8">
                     <h3 className="flex gap-x-1.5 font-semibold text-white">
-                        "Web3 Nexus: Bridging Realities, Transforming Futures
+                        &quot;Web3 Nexus: Bridging Realities, Transforming Futures
                     </h3>
                     <p className="mt-1 text-sm text-gray-400">
                         A convergence of minds and ideas, where web3 enthusiasts connect to shape the decentralized future. Explore, learn, and innovate.
