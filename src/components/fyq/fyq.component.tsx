@@ -13,7 +13,7 @@ const Fyq = () => {
                 <div className="grid sm:grid-cols-2 gap-6 md:gap-12">
                     <div>
                         <h3 className="text-lg font-semibold text-gray-200">
-                            Can I cancel at anytime?
+                            What is KBS?
                         </h3>
                         <p className="mt-2 text-gray-400">
                             Yes, you can cancel anytime no questions are asked while you cancel but we would highly appreciate if you will give us some feedback.
