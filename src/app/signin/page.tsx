@@ -34,7 +34,7 @@ const SignIn = () => {
         <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
         before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')]">
-            <body className="bg-black-900 flex h-full items-center py-16">
+            <body className="bg-[#030014] flex h-full items-center py-16">
                 {/* <ToastContainer
                     position="bottom-right"
                     autoClose={5000}
