@@ -1,27 +1,14 @@
-// /**
-//  * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
-//  * for Docker builds.
-//  */
-// await import("./src/env.js");
-
-// /** @type {import("next").NextConfig} */
-
-// // `next/image`, hostname "media.licdn.com" is not configured under images in your `next.config.js`
-// const config = {
-//     images: {
-//         domains: ["media.licdn.com"],
-//     },
-// };
-
-// export default config;
-
-
 import { build } from "velite";
 
 /** @type {import('next').NextConfig} */
 export default {
      images: {
-        domains: ["media.licdn.com"],
+        remotePatterns: [
+           {
+        protocol: "https",
+        hostname: "**",
+      },
+        ],
     },
   webpack: (config) => {
     config.plugins.push(new VeliteWebpackPlugin());
@@ -45,7 +32,7 @@ class VeliteWebpackPlugin {
       if (VeliteWebpackPlugin.started) return;
       VeliteWebpackPlugin.started = true;
       const dev = compiler.options.mode === "development";
-      this.options.watch = this.options.watch ?? dev;
+      this.options.watch = true;
       this.options.clean = this.options.clean ?? !dev;
       await build(this.options); // start velite
     });

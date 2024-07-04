@@ -25,10 +25,9 @@
 //   }
 // };
 
-
 import { NextResponse } from "next/server";
 import path from "path";
-import { writeFile } from "fs/promises";
+import { writeFile, mkdir } from "fs/promises";
 
 export const POST = async (req: Request, res: Response) => {
   try {
@@ -42,11 +41,12 @@ export const POST = async (req: Request, res: Response) => {
     const buffer = Buffer.from(await file.arrayBuffer());
     const filename = file.name.replaceAll(" ", "_");
     console.log(filename);
+    
+    const directoryPath = path.join(process.cwd(), "content/blog");
+
     try {
-      await writeFile(
-        path.join(process.cwd(), "content/blog", filename),
-        buffer
-      );
+      await mkdir(directoryPath, { recursive: true });
+      await writeFile(path.join(directoryPath, filename), buffer);
       return NextResponse.json({ message: "Success", status: 201 });
     } catch (error) {
       console.error("Error occurred ", error);
