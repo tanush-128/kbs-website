@@ -38,13 +38,14 @@ export function getAllTags(posts: Array<Post>) {
 }
 
 export function sortTagsByCount(tags: Record<string, number>) {
+  // @ts-ignore
   return Object.keys(tags).sort((a, b) => tags[b] - tags[a])
 }
 
 export function getPostsByTagSlug(posts: Array<Post>, tag: string) {
   return posts.filter(post => {
     if (!post.tags) return false
-    const slugifiedTags = post.tags.map(tag => slug(tag))
-    return slugifiedTags.includes(tag)
+    const slugifiedTags = post.tags?.map(tag => slug(tag))
+    return slugifiedTags?.includes(tag)
   })
 }
