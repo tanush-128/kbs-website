@@ -20,12 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <AuthProvider >
-    <html lang="en" className={`${GeistSans.variable} dark`}>
-    <Navigation/>
-      
-       <body>{children}</body>
+    <html lang="en" className={`${GeistSans.variable}`}>
+   
+      <body>{children}</body>
 
-      <Footer/>
     </html>
     </AuthProvider >
 

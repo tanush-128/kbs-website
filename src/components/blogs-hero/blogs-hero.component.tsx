@@ -1,4 +1,6 @@
-const BlogsHero = () => {
+import Link from "next/link";
+
+const BlogsHero = ({tags} : {tags: string[]}) => {
     return (
         <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
@@ -51,7 +53,16 @@ const BlogsHero = () => {
                     </div>
 
                     <div className="mt-10 sm:mt-20">
-                        <a className="m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700 shadow-sm  disabled:opacity-50 disabled:pointer-events-none bg-slate-900  text-white hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
+
+                                        {
+                                            tags.map((tag, index) => (
+                                                <Link key={index} href="#" className="m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700 shadow-sm  disabled:opacity-50 disabled:pointer-events-none bg-slate-900  text-white hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600">
+                                                    {tag}
+                                                </Link>
+                                            ))
+                                        }
+
+                        {/* <a className="m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700 shadow-sm  disabled:opacity-50 disabled:pointer-events-none bg-slate-900  text-white hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
                             <svg className="flex-shrink-0 w-3 h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
                             </svg>
@@ -70,12 +81,10 @@ const BlogsHero = () => {
                             </svg>
                             Health
                         </a>
-                        <a className="m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700 shadow-sm  disabled:opacity-50 disabled:pointer-events-none bg-slate-900  text-white hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
-                            <svg className="flex-shrink-0 w-3 h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
-                            </svg>
+                        <Link className="m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700 shadow-sm  disabled:opacity-50 disabled:pointer-events-none bg-slate-900  text-white hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
+                  
                             Creative
-                        </a>
+                        </Link>
                         <a className="m-1 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-700 shadow-sm  disabled:opacity-50 disabled:pointer-events-none bg-slate-900  text-white hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
                             <svg className="flex-shrink-0 w-3 h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
@@ -88,7 +97,7 @@ const BlogsHero = () => {
                                 <path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z" />
                             </svg>
                             Adventure
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
