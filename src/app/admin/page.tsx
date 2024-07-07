@@ -13,18 +13,6 @@ import {
   TableRow,
 } from "~/components/ui/table";
 import { getAllBlogs, getUserById } from "./action";
-// import { sendInvitation } from "~/lib/mailer";
-import axios from "axios";
-
-export const sendInvitation = async (email: string, role: string) => {
-  try {
-    const response = await axios.post("/api/send-invitation", { email, role });
-    return response.data;
-  } catch (error) {
-    console.error("Error sending invitation", error);
-    throw error;
-  }
-};
 
 const AdminDashboard = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);

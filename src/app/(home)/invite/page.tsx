@@ -3,7 +3,7 @@ import { Invitation } from "@prisma/client";
 import axios from "axios";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, Suspense, useEffect, useState } from "react";
 import { getIniviationByToken } from "~/app/admin/action";
 
 const InvitePage = () => {
