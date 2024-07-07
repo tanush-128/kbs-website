@@ -1,4 +1,9 @@
+
+
+
+
 const EventHero = () => {
+
     return (
         <div className="relative overflow-hidden pt-20 before:absolute before:top-0 before:start-1/2 
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
