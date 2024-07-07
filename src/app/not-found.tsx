@@ -9,7 +9,7 @@ function NotFound() {
   };
 
   return (
-    <div className="h-full mt-32">
+    <div className="h-full mt-32 font-source_code_pro">
       <div className="flex h-full">
         <div className="max-w-[50rem] flex flex-col mx-auto w-full h-full">
           <header className="mb-auto flex justify-center z-50 w-full py-4">

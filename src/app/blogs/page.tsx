@@ -33,7 +33,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   const sortedTags = sortTagsByCount(tags);
 
   return (
-    <div className="container max-w-4xl py-6 lg:py-10">
+    <div className="container max-w-4xl py-6 lg:py-10 font-source_code_pro">
          <Fragment>
              <BlogsHero  tags={sortedTags}/>
          </Fragment>

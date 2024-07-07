@@ -4,7 +4,7 @@ import EventsContainer from "~/components/events-card-container/eventsContainer"
 
 const EventRoute = () => {
     return (
-        <div>
+        <div className="font-source_code_pro">
             <EventHero />
             <EventsContainer/>
             {/* 

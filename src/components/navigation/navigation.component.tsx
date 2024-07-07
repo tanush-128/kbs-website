@@ -12,7 +12,7 @@ const Navigation: React.FC = () => {
     }
 
     return (
-        <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0">
+        <header className="font-source_code_pro flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0">
             <nav className="mt-6 relative max-w-[85rem] w-full bg-gray-800 border border-gray-700 bg-opacity-80 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto" aria-label="Global">
                 <div className="flex items-center justify-between">
                     <Link href="/" passHref>

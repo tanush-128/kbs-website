@@ -7,7 +7,7 @@ const OurTeam = () => {
     return (
         <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
-        before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')]">
+        before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')] font-source_code_pro">
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-20">
                 <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
                     <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-white lg:text-6xl">Our Team</h2>

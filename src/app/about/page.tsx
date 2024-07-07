@@ -2,7 +2,7 @@ import AboutImg from "../../assets/img/about.jpeg"
 import Image from 'next/image'
 const About = () => {
     return (
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-44" id="about">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-44 font-source_code_pro" id="about">
 
             <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
                 <div className="lg:col-span-3">
