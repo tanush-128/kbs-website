@@ -1,15 +1,14 @@
-"use client"
+"use client";
 
-import Link from 'next/link';
-import { signOut, useSession } from "next-auth/react";
-
+import Link from "next/link";
+import { signIn, signOut, useSession } from "next-auth/react";
+import { Menu } from "lucide-react";
 
 const Navigation: React.FC = () => {
-
-    const { data, status } = useSession();
-    const handleSignOut = async () => {
-        await signOut();
-    }
+  const { data, status } = useSession();
+  const handleSignOut = async () => {
+    await signOut();
+  };
 
     return (
         <header className="font-jetbrains_mono flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0">

@@ -1,13 +1,14 @@
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import {
   getServerSession,
   type DefaultSession,
   type NextAuthOptions,
 } from "next-auth";
-import Credentials from "next-auth/providers/credentials";
+import { type Adapter } from "next-auth/adapters";
 import Google from "next-auth/providers/google";
-import DiscordProvider from "next-auth/providers/google";
 
 import { env } from "~/env";
+import { db } from "~/server/db";
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
@@ -19,15 +20,16 @@ declare module "next-auth" {
   interface Session extends DefaultSession {
     user: {
       id: string;
+
       // ...other properties
-      // role: UserRole;
+      role: "USER" | "ADMIN" | "EDITOR";
     } & DefaultSession["user"];
   }
 
-  // interface User {
-  //   // ...other properties
-  //   // role: UserRole;
-  // }
+  interface User {
+    // ...other properties
+    role: "USER" | "ADMIN" | "EDITOR";
+  }
 }
 
 /**
@@ -37,36 +39,57 @@ declare module "next-auth" {
  */
 export const authOptions: NextAuthOptions = {
   callbacks: {
-    session: ({ session, token }) => ({
+    session: ({ session, user }) => ({
       ...session,
       user: {
         ...session.user,
-        id: token.sub,
+
+        id: user.id,
+        role: user.role,
       },
     }),
+    // jwt: ({ token, user }) => {
+    //   if (user) {
+    //     token.id = user.id;
+    //     token.role = user.role;
+    //   }
+
+    //   return token;
+    // },
+
+    // signIn: async ({ user, account, profile }) => {
+    //   if (user.email) {
+    //     const existingUser = await db.user.findUnique({
+    //       where: { email: user.email },
+    //     });
+
+    //     if (existingUser) {
+    //       user.role = existingUser.role;
+    //     } else {
+    //       user.role = "USER";
+    //       await db.user.create({
+    //         data: {
+    //           email: user.email,
+    //           name: user.name,
+    //           role: "USER",
+    //         },
+    //       });
+    //     }
+    //   } else {
+    //     // Handle the case when user.email is null or undefined
+    //     // For example, you can throw an error or return false.
+    //     throw new Error("User email is missing.");
+    //   }
+
+    //   return true;
+    // }
   },
+  adapter: PrismaAdapter(db) as Adapter,
   providers: [
     Google({
-      clientId: "42552123265-msoo43qqlhvchgc5hpg85iidj9a4eq4e.apps.googleusercontent.com",
-      clientSecret: "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",
+      clientId: env.GOOGLE_ID,
+      clientSecret: env.GOOGLE_SECRET,
     }),
-    Credentials({
-      id: "credentials",
-      name: "Credentials",
-      credentials: {
-        username: { label: "Username", type: "text" },
-        password: { label: "Password", type: "password" },
-      },
-      async authorize(credentials) {
-        const user = { id: "1", name: "John Doe", email: "john123@gmail.com" };
-        return user;
-      }
-    }),
-
-    // DiscordProvider({
-    //   clientId: env.DISCORD_CLIENT_ID,
-    //   clientSecret: env.DISCORD_CLIENT_SECRET,
-    // }),
     /**
      * ...add more providers here.
      *
