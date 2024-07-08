@@ -1,7 +1,10 @@
+import "./evt.css";
+
 interface Event {
   date: string;
   title: string;
   description: string;
+  src: string;
   src: string;
   speaker: {
     name: string;
