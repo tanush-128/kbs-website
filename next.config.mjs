@@ -17,15 +17,14 @@ const nextConfig = {
         hostname: "**",
       }
     ]
-
   },
   eslint: {
     ignoreDuringBuilds  : true
   },
   typescript: {
     ignoreBuildErrors: true,
-  },
-  
+  }
+
   // Optionally, add any other Next.js config below
 }
  
