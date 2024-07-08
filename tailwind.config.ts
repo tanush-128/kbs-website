@@ -1,3 +1,4 @@
+import { Rethink_Sans, Roboto } from "next/font/google";
 import type { Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
@@ -21,6 +22,9 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        inter: ["var(--font-inter)", "inter"],
+        rethink_sans: ["var(--font-rethink-sans)", "rethink-sans"],
+        jetbrains_mono: ["var(--font-jetbrains-mono)", "jetbrains-mono"],
       },
       colors: {
         border: "hsl(var(--border))",
