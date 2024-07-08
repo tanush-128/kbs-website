@@ -3,7 +3,7 @@ import { Invitation } from "@prisma/client";
 import axios from "axios";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Suspense, Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { getIniviationByToken } from "~/app/admin/action";
 
 const InvitePage = () => {
@@ -90,7 +90,9 @@ const InvitePage = () => {
   );
 };
 
-const WithSuspenseInvitePage = () => {
+// export default
+
+const InvitePageSuspense = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <InvitePage />
@@ -98,4 +100,4 @@ const WithSuspenseInvitePage = () => {
   );
 };
 
-export default WithSuspenseInvitePage;
+export default InvitePageSuspense;

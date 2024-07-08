@@ -1,6 +1,3 @@
-
-import "./evt.css"
-
 interface Event {
   date: string;
   title: string;
