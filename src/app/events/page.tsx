@@ -4,11 +4,10 @@ import EventsContainer from "~/components/events-card-container/eventsContainer"
 
 const EventRoute = () => {
     return (
-        <div className="font-source_code_pro">
+        <div className="font-jetbrains_mono relative overflow-hidden">
             <EventHero />
-            <EventsContainer/>
-            {/* 
-             */}
+            <EventsContainer />
+            <div className="absolute -right-[70%] top-0 w-[80%] h-[85%] rounded-full blue__gradient"></div>
         </div>
     )
 }

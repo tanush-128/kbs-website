@@ -4,7 +4,7 @@ const HomeComponent = () => {
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 bg-[#030014]">
             <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
                 <div className="mt-20 max-w-3xl text-center mx-auto">
-                    <h1 className="block font-bold text-6xl md:text-5xl lg:text-8xl text-gray-100">
+                    <h1 className="block font-bold text-6xl md:text-5xl lg:text-8xl text-gray-100 font-inter">
                         Kharagpur <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-cyan-500">
                             Blockchain

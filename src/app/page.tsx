@@ -10,7 +10,7 @@ import NewsLetter from "~/components/newsletter/newsletter.component";
 
 export default function HomePage() {
   return (
-    <div className="bg-[#030014] text-white font-source_code_pro">
+    <div className="bg-[#030014] text-white font-jetbrains_mono">
             <HomeComponent />
             <About />
             <Encryption/>

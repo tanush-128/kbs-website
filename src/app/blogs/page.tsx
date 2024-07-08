@@ -33,7 +33,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   const sortedTags = sortTagsByCount(tags);
 
   return (
-    <div className="container max-w-4xl py-6 lg:py-10 font-source_code_pro">
+    <div className="container max-w-4xl py-6 lg:py-10 font-jetbrains_mono relative">
          <Fragment>
              <BlogsHero  tags={sortedTags}/>
          </Fragment>
@@ -77,6 +77,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           </CardContent>
         </Card> */}
       </div>
+      <div className="absolute -left-[80%] top-0 w-[50%] h-[55%] rounded-full green__gradient"></div>
+      <div className="absolute -right-[80%] bottom-0 w-[50%] h-[45%] rounded-full blue__gradient"></div>
     </div>
   );
 }

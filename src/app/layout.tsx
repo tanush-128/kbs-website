@@ -6,12 +6,24 @@ import Navigation from "~/components/navigation/navigation.component";
 import Footer from "~/components/footer/footer.component";
 import { SessionProvider } from "next-auth/react";
 import AuthProvider from "~/provider/AuthProvider";
-import { Source_Code_Pro } from "next/font/google"
+import { Inter, Rethink_Sans, JetBrains_Mono } from "next/font/google"
 
-const source_code_pro = Source_Code_Pro({
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-inter'
+})
+
+const jetbrains_mono = JetBrains_Mono({
   subsets: ['latin'],
   weight: '400',
-  variable: '--font-source-code-pro'
+  variable: '--font-jetbrains-mono'
+})
+
+const rethink_sans = Rethink_Sans({
+  subsets: ['latin'],
+  weight: '700',
+  variable: '--font-rethink-sans'
 })
 
 export const metadata = {
@@ -28,7 +40,7 @@ export default function RootLayout({
   return (
     <AuthProvider >
       <html lang="en" className={`${GeistSans.variable} dark`}>
-        <body className={source_code_pro.variable}>
+        <body className={`${inter.variable} ${jetbrains_mono.variable} ${rethink_sans.variable} overflow-x-clip`}>
           <Navigation />
           {children}
           <Footer />

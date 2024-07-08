@@ -2,11 +2,11 @@ import AboutImg from "../../assets/img/about.jpeg"
 import Image from "next/image"
 const About = () => {
     return (
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8  bg-[#030014]" id="about">
+        <div className="relative max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8  bg-[#030014]" id="about">
 
             <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
                 <div className="lg:col-span-3">
-                    <h1 className="block text-5xl font-bold  md:text-5xl lg:text-6xl text-white  mb-10 text-right"> <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-cyan-500"> <br />About</span> Us</h1>
+                    <h1 className="block text-5xl font-bold  md:text-5xl lg:text-6xl text-white  mb-10 text-right"> <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-cyan-500 font-inter"> <br />About</span> Us</h1>
                     <p className="mt-3 text-lg text-gray-400">We are a dynamic community of passionate students dedicated to exploring, understanding, and shaping the future of decentralized technologies. At the intersection of education and innovation, we strive to empower minds, foster collaboration, and drive the adoption of blockchain and web3 solutions.</p>
                     <p className="mt-3 text-lg text-gray-400">Our mission is to bridge the gap between curiosity and mastery in the world of blockchain. Through workshops, events, and hands-on experiences, we aim to demystify the complexities of decentralized technologies, inspire innovation, and nurture the next generation of blockchain enthusiasts.</p>
                     <p className="mt-3 text-lg text-gray-400">From blockchain workshops and symposiums to collaborative projects and networking events, we provide a platform for students to dive deep into the world of blockchain. We believe in the transformative power of education and hands-on learning, and our initiatives reflect this commitment to excellence.</p>
@@ -17,6 +17,7 @@ const About = () => {
                     <Image src={AboutImg} alt="About" />
                 </div>
             </div>
+            <div className="absolute -left-[60%] top-0  w-[60%] h-[85%] rounded-full blue__gradient"></div>
         </div>
     )
 }

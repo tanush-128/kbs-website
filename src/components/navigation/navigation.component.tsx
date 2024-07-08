@@ -12,7 +12,7 @@ const Navigation: React.FC = () => {
     }
 
     return (
-        <header className="font-source_code_pro flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0">
+        <header className="font-jetbrains_mono flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0">
             <nav className="mt-6 relative max-w-[85rem] w-full bg-gray-800 border border-gray-700 bg-opacity-80 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto" aria-label="Global">
                 <div className="flex items-center justify-between">
                     <Link href="/" passHref>
@@ -30,9 +30,6 @@ const Navigation: React.FC = () => {
                     <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
                         <Link href="/" passHref>
                             <div className="font-medium text-gray-400 md:py-6 hover:text-gray-500 cursor-pointer" aria-current="page">Home</div>
-                        </Link>
-                        <Link href="/about" passHref>
-                            <div className="font-medium text-gray-400 md:py-6 hover:text-gray-500 cursor-pointer">About</div>
                         </Link>
                         <Link href="/events" passHref>
                             <div className="font-medium text-gray-400 md:py-6 hover:text-gray-500 cursor-pointer">Events</div>
