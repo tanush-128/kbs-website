@@ -10,10 +10,11 @@ import NewsLetter from "~/components/newsletter/newsletter.component";
 
 export default function HomePage() {
   return (
-    <div className="bg-[#030014] text-white font-jetbrains_mono">
-            <HomeComponent />
-            <About />
-            <Encryption/>
-        </div>
+    <div className="font-jetbrains_mono">
+      <HomeComponent />
+      <About />
+      <Encryption />
+      <div className="absolute -left-[40%] top-[20%] w-[60%] h-[85%] rounded-full blue__gradient z-[-1]"></div>
+    </div>
   );
 }

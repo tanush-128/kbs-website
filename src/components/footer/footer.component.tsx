@@ -6,7 +6,7 @@ import { LuArrowDownRight } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <footer className="z-20 mx-auto w-full max-w-[85rem] border-t mt-20 px-4 pt-10 sm:px-6 lg:px-8 relative overflow-hidden font-jetbrains_mono">
+    <footer className="mx-auto w-full max-w-[85rem] border-t mt-20 px-4 pt-10 sm:px-6 lg:px-8 relative overflow-hidden font-jetbrains_mono">
       <div className="flex justify-between">
         <div className="col-span-full hidden lg:col-span-1 lg:block">
           <a

@@ -16,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #282c34; */
   /* background-color: #000; */
+  background-color: #030014;
 }
 
 dark::after {

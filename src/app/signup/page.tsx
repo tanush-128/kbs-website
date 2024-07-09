@@ -23,7 +23,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 
+        <div className="overflow-hidden before:absolute before:top-0 before:start-1/2 
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
         before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')] font-jetbrains_mono">
             <div className="flex h-full items-center py-16">
@@ -40,7 +40,8 @@ const SignUp = () => {
                     theme="dark"
                     transition="Bounce"
                 /> */}
-                <div className="w-full max-w-md mx-auto p-6">
+                <div className="w-full max-w-md mx-auto p-6 mt-20 relative">
+                <div className="absolute -left-[10%] -top-[20%] w-[120%] h-[110%] rounded-full green__gradient z-[-1]"></div>
                     <div className="mt-7 border rounded-xl shadow-sm bg-gray-800 border-gray-700">
                         <div className="p-4 sm:p-7">
                             <div className="text-center">

@@ -21,8 +21,8 @@ const OurTeam = () => {
 
                 </div>
             </div>
-            <div className="absolute -left-[80%] top-0 w-[50%] h-[55%] rounded-full green__gradient"></div>
-            <div className="absolute -right-[80%] bottom-0 w-[50%] h-[45%] rounded-full blue__gradient"></div>
+            <div className="absolute -right-[40%] bottom-[40%] w-[50%] h-[35%] rounded-full blue__gradient"></div>
+            <div className="absolute -left-[40%] top-[40%] w-[50%] h-[35%] rounded-full blue__gradient"></div>
         </div>
 
     );

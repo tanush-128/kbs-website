@@ -31,10 +31,10 @@ const SignIn = () => {
 
 
     return (
-        <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 
+        <div className="overflow-hidden before:absolute before:top-0 before:start-1/2 
         before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 
         before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')] font-jetbrains_mono">
-            <div className="bg-[#030014] flex h-full items-center py-16">
+            <div className="flex h-full items-center py-16">
                 {/* <ToastContainer
                     position="bottom-right"
                     autoClose={5000}
@@ -47,7 +47,8 @@ const SignIn = () => {
                     pauseOnHover
                     theme="dark"
                 /> */}
-                <main className="w-full max-w-md mx-auto p-6">
+                <main className="w-full max-w-md mx-auto p-6 mt-20 relative">
+                <div className="absolute -left-[10%] -top-[10%] w-[120%] h-[110%] rounded-full blue__gradient z-[-1]"></div>
                     <div className="mt-7 border rounded-xl shadow-sm bg-gray-800 border-gray-700">
                         <div className="p-4 sm:p-7">
                             <div className="text-center">
@@ -73,7 +74,7 @@ const SignIn = () => {
                                     Sign in with Google
                                 </button>
 
-                                <div className="py-3 flex items-center text-xs  uppercase before:flex-[1_1_0%] before:border-t before:border-gray-600 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-600 after:ms-6 text-gray-500">Or</div>
+                                <div className=" py-3 flex items-center text-xs  uppercase before:flex-[1_1_0%] before:border-t before:border-gray-600 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-600 after:ms-6 text-gray-500">Or</div>
 
 
                                 <form>
@@ -140,6 +141,8 @@ const SignIn = () => {
                     </div>
                 </main>
             </div>
+            {/* <div className="absolute -right-[40%] top-[20%] w-[50%] h-[40%] rounded-full green__gradient"></div>
+            <div className="absolute -left-[40%] bottom-[25%] w-[50%] h-[40%] rounded-full green__gradient"></div> */}
         </div>
     )
 }
