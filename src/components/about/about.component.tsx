@@ -2,7 +2,7 @@ import AboutImg from "../../assets/img/about.jpeg"
 import Image from "next/image"
 const About = () => {
     return (
-        <div className="relative max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8  bg-[#030014]" id="about">
+        <div className="relative max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8" id="about">
 
             <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
                 <div className="lg:col-span-3">
@@ -12,12 +12,12 @@ const About = () => {
                     <p className="mt-3 text-lg text-gray-400">From blockchain workshops and symposiums to collaborative projects and networking events, we provide a platform for students to dive deep into the world of blockchain. We believe in the transformative power of education and hands-on learning, and our initiatives reflect this commitment to excellence.</p>
                 </div>
 
-                <div className="lg:col-span-4 mt-10 lg:mt-0">
-              
+                <div className="lg:col-span-4 mt-10 lg:mt-0 relative">
+                    {/* <div className="absolute -left-[10%] -top-[20%] w-[120%] h-[110%] rounded-full green__gradient z-[-1]"></div> */}
                     <Image src={AboutImg} alt="About" />
                 </div>
             </div>
-            <div className="absolute -left-[60%] top-0  w-[60%] h-[85%] rounded-full blue__gradient"></div>
+
         </div>
     )
 }
