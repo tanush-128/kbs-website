@@ -136,6 +136,7 @@ dark::after {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -145,8 +146,21 @@ dark::after {
   background: linear-gradient(180deg, #030014 0%, #16b54b81 100%);
   filter: blur(200px);
 }
+
 .blue__gradient {
   background: linear-gradient(180deg, #001430 0%, #4b16b57a 100%);
   filter: blur(200px);
 }
 
+.socials:after {
+  border-bottom: 10px solid #e7e7e7;
+  border-left: 10px solid #0000;
+  border-right: 10px solid #0000;
+  bottom: -10px;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) rotate(-180deg);
+  width: 0;
+}

@@ -1,7 +1,6 @@
-import teamMembers from '~/assets/js/team-member-data';
-import OurTeamCard from '~/components/our-team-card/our-team-card.component';
-// import { teamMembers } from '../../assets/js/team-member-data'
-// import OurTeamCard from '../../components/our-team-card/our-team-card.component';
+import { founderAdvisors, governorHeads } from '~/assets/js/team-member-data';
+import TeamCard from '~/components/team/teamCard.component';
+
 
 const OurTeam = () => {
     return (
@@ -14,11 +13,20 @@ const OurTeam = () => {
                     <p className="mt-1 text-gray-400">Team behind KBS</p>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-12">
-                    {teamMembers.map((person) => (
-                        <OurTeamCard key={person.id} person={person} />
-                    ))}
+                <div>
+                    <h3 className='text-center text-2xl font-bold mb-4'>Governor and Heads</h3>
+                    <div className="flex flex-wrap justify-center gap-8">
+                        {governorHeads.map((person) => (
+                            <TeamCard key={person.id} person={person} />
+                        ))}
+                    </div>
 
+                    <h3 className='text-center text-2xl font-bold mb-4 mt-16'>Founder and Advisors</h3>
+                    <div className="flex flex-wrap justify-center gap-8">
+                        {founderAdvisors.map((person) => (
+                            <TeamCard key={person.id} person={person} />
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="absolute -right-[40%] bottom-[40%] w-[50%] h-[35%] rounded-full blue__gradient"></div>
