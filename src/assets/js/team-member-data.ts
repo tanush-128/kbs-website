@@ -13,7 +13,7 @@ export const founderAdvisors : Person[] = [
     {
         id: uuidv4(),
         name: 'Prakhar Jain',
-        position: 'Founder and Governor',
+        position: 'Advisor',
         image: "/team/prakhar_jain.jpeg",
         linkedin: "https://www.linkedin.com/in/prakhar-jain-4bb879227/",
         instagram: '/',
@@ -22,7 +22,7 @@ export const founderAdvisors : Person[] = [
     {
         id: uuidv4(),
         name: 'Nishim Goyal',
-        position: 'Tech Head',
+        position: 'Advisor',
         image: '/team/nishim_goyal.jpeg',
         linkedin: 'https://www.linkedin.com/in/nishim-goyal/',
         instagram: '/',
@@ -31,7 +31,7 @@ export const founderAdvisors : Person[] = [
     {
         id: uuidv4(),
         name: 'Sameer Sen',
-        position: 'Tech Head',
+        position: 'Advisor',
         image:'/team/sameer_sen.jpeg',
         linkedin: 'https://www.linkedin.com/in/sameer-sen-82a82a244/',
         instagram: '/',
@@ -40,7 +40,7 @@ export const founderAdvisors : Person[] = [
     {
         id: uuidv4(),
         name: 'Suvojit Das',
-        position: 'Research Head',
+        position: 'Advisor',
         image: '/team/suvojit_das.jpeg',
         linkedin: 'https://www.linkedin.com/in/suvojit-das-89aa5124b/',
         instagram: '/',
@@ -49,7 +49,7 @@ export const founderAdvisors : Person[] = [
     {
         id: uuidv4(),
         name: 'Ayush Kumar',
-        position: 'Research Head',
+        position: 'Advisor',
         image: '/team/ayush_kumar.jpeg',
         linkedin: 'https://www.linkedin.com/in/ayush-kumar-b3b701232/',
         instagram: '/',
@@ -58,7 +58,7 @@ export const founderAdvisors : Person[] = [
     {
         id: uuidv4(),
         name: 'Avhinav Prakash',
-        position: 'Research Head',
+        position: 'Advisor',
         image: '/team/abhinav_prakash.jpeg',
         linkedin: 'https://www.linkedin.com/in/psychopunksage/',
         instagram: '/',
@@ -67,7 +67,7 @@ export const founderAdvisors : Person[] = [
     {
         id: uuidv4(),
         name: 'SSVKSS Jyothiraditya',
-        position: 'Operations Head',
+        position: 'Advisor',
         image: '/team/SSVKSS_jyothiraditya.jpeg',
         linkedin: 'https://www.linkedin.com/in/ssvkss-jyothiraditya-21200322b/',
         instagram: '/',
@@ -76,7 +76,7 @@ export const founderAdvisors : Person[] = [
     {
         id: uuidv4(),
         name: 'Diptendu Sarkar',
-        position: 'Operations Head',
+        position: 'Advisor',
         image: '/team/diptendu_sarkar.jpeg',
         linkedin: 'https://www.linkedin.com/in/diptendu-sarkar-397142205/',
         instagram: '/',
@@ -155,7 +155,7 @@ export const governorHeads : Person[] = [
         position: 'Governor',
         image: '/team/swarnendu_bhandari.jpeg',
         linkedin: 'https://www.linkedin.com/in/swarnendu-bhandari-847590290/',
-        instagram: '/',
+        instagram: 'https://www.instagram.com/swarnendu_iit_kgp/',
         facebook: '/',
     },
     {

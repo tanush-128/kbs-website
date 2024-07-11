@@ -18,7 +18,7 @@ const TeamCard = (person: { person: Person }) => {
     }
 
     return (
-        <div className="bg-[#0f1219] px-4 py-6 rounded-xl max-w-[14rem]">
+        <div className="bg-[#0f1219] px-4 py-6 rounded-xl max-w-[14rem] hover:shadow-md hover:shadow-green-400">
             <div className="font-inter">
                 <div className="bg-[#151a21] rounded-xl flex justify-between gap-4 p-3">
                     <div className="flex flex-col">
@@ -36,9 +36,17 @@ const TeamCard = (person: { person: Person }) => {
                         </div>
                         {social && (
                             <div className="bg-[#e7e7e7] socials absolute -top-12 -left-[1.85rem] flex gap-2 p-2 rounded-md">
-                                <a href={linkedin} target="_blank" className="text-blue-600 text-xl"><FaLinkedin /></a>
-                                <a href={instagram} target="_blank" className="text-blue-600 text-xl"><RiInstagramFill /></a>
-                                <a href={facebook} target="_blank" className="text-blue-600 text-xl"><FaFacebook /></a>
+                                {linkedin !== '/' &&
+                                    <a href={linkedin} target="_blank" className="text-blue-600 text-xl"><FaLinkedin /></a>
+                                }
+                                {
+                                    instagram !== '/' &&
+                                    <a href={instagram} target="_blank" className="text-blue-600 text-xl"><RiInstagramFill /></a>
+                                }
+                                {
+                                    facebook !== '/' &&
+                                    <a href={facebook} target="_blank" className="text-blue-600 text-xl"><FaFacebook /></a>
+                                }
                             </div>
                         )}
 
