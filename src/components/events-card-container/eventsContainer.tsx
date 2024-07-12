@@ -4,7 +4,7 @@ interface Event {
   date: string;
   title: string;
   description: string;
-  src: string;
+
   src: string;
   speaker: {
     name: string;
@@ -14,21 +14,25 @@ interface Event {
 
 const EventItem = ({ event }: { event: Event }) => {
   return (
-    <div className="group relative flex gap-x-3 rounded-lg hover:bg-white/10 py-4">
+    <div className="group relative flex gap-x-3 rounded-lg py-4 hover:bg-white/10">
       <a className="absolute inset-0 z-[1]" href="#"></a>
       <div className="relative after:absolute after:bottom-0 after:start-3.5 after:top-0 after:w-px after:-translate-x-[0.5px] after:bg-gray-700 last:after:hidden group-hover:after:bg-gray-600">
         <div className="relative z-10 flex h-7 w-7 items-center justify-center">
           <div className="h-2 w-2 rounded-full border-2 border-gray-600 bg-gray-800 group-hover:border-gray-600"></div>
-
         </div>
       </div>
       <div className="flex items-center gap-4">
-        <img src={event.src} className="w-32 h-36 rounded-xl group-hover:brightness-75 group-hover:outline group-hover:outline-2 group-hover:outline-indigo-800 "></img>
+        <img
+          src={event.src}
+          className="h-36 w-32 rounded-xl group-hover:outline group-hover:outline-2 group-hover:outline-indigo-800 group-hover:brightness-75 "
+        ></img>
         <div className="grow p-2 pb-8">
           <h3 className="flex gap-x-1.5 font-semibold text-white" id="title">
             {event.title}
           </h3>
-          <p className="mt-1 text-sm text-gray-400" id="description">{event.description}</p>
+          <p className="mt-1 text-sm text-gray-400" id="description">
+            {event.description}
+          </p>
         </div>
       </div>
     </div>
@@ -75,7 +79,7 @@ const EventsContainer = () => {
     <div className="flex flex-col pb-10 lg:ml-96 lg:mr-96 lg:mt-0 ">
       {events.map((event, index) => (
         <div key={index}>
-          <div className=" ps-2 my-4">
+          <div className=" my-4 ps-2">
             <h3 className="text-xs font-medium uppercase text-gray-400">
               {event.date}
             </h3>
