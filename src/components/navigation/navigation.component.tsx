@@ -11,9 +11,9 @@ const Navigation: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 z-50 flex w-full flex-wrap font-jetbrains_mono text-sm md:flex-nowrap md:justify-start">
+    <header className="fixed top-0 z-50 mx-auto w-full  flex-wrap font-jetbrains_mono text-sm md:flex-nowrap md:justify-start">
       <nav
-        className="relative mx-2 mt-6 w-full max-w-[85rem] rounded-[36px] border border-gray-700 bg-gray-800 bg-opacity-80 px-4 py-3 md:flex md:items-center md:justify-between md:px-6 md:py-0 lg:px-8 xl:mx-auto"
+        className="relative mx-2  mt-6 w-full max-w-[85rem] rounded-[36px] border border-gray-700 bg-gray-800 bg-opacity-80 px-4 py-3 md:flex md:items-center md:justify-between md:px-6 md:py-0 lg:px-8 xl:mx-auto"
         aria-label="Global"
       >
         <div className="flex items-center justify-between">
@@ -37,6 +37,11 @@ const Navigation: React.FC = () => {
               data-hs-collapse="#navbar-collapse-with-animation"
               aria-controls="navbar-collapse-with-animation"
               aria-label="Toggle navigation"
+              onClick={() => {
+                document
+                  .getElementById("navbar-collapse-with-animation")
+                  .classList.toggle("hidden");
+              }}
             >
               <svg
                 className="hs-collapse-open:hidden h-4 w-4 flex-shrink-0"
@@ -128,7 +133,7 @@ const Navigation: React.FC = () => {
                 </button>
               </>
             ) : (
-              <button onClick={() => signIn("google")}>
+              <button onClick={() => signIn("google", { callbackUrl: "/" })}>
                 <div className="flex cursor-pointer items-center justify-center gap-x-2 font-medium text-gray-400 hover:text-green-500 hover:text-green-700 md:my-6 md:border-s md:border-gray-300 md:ps-6">
                   <svg
                     className="h-4 w-4 flex-shrink-0"

@@ -6,11 +6,11 @@ import { LuArrowDownRight } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <footer className="mx-auto w-full max-w-[85rem] border-t mt-20 px-4 pt-10 sm:px-6 lg:px-8 relative overflow-hidden font-jetbrains_mono">
-      <div className="flex justify-between">
+    <footer className="relative mx-auto mt-20 w-full max-w-[85rem] overflow-hidden border-t px-4 pt-10 font-jetbrains_mono sm:px-6 lg:px-8">
+      <div className="flex w-full items-center justify-between">
         <div className="col-span-full hidden lg:col-span-1 lg:block">
           <a
-            className="font-rethink_sans flex-none text-4xl text-white focus:outline-none focus:ring-1 focus:ring-gray-600"
+            className="flex-none font-rethink_sans text-4xl text-white focus:outline-none focus:ring-1 focus:ring-gray-600"
             href="#"
             aria-label="Brand"
           >
@@ -19,13 +19,13 @@ const Footer = () => {
             Networking
           </a>
         </div>
-        <div className="flex flex-wrap justify-end gap-6 w-[60%]">
+        <div className="flex flex-wrap justify-center gap-6 lg:max-w-[60%] lg:justify-end">
           <a
             href="https://www.linkedin.com/company/blockchainkgp"
-            className="rounded border p-3 font-bold text-white hover:text-green-400 hover:border-green-400"
+            className="rounded border p-3 font-bold text-white hover:border-green-400 hover:text-green-400"
           >
             <div className="flex items-center">
-              <div className="bg-[#151a21] p-4 rounded-full">
+              <div className="rounded-full bg-[#151a21] p-4">
                 <FaLinkedin className="text-2xl" />
               </div>
               <span className="px-5 ">LinkedIn</span>
@@ -34,10 +34,10 @@ const Footer = () => {
           </a>
           <a
             href="https://www.instagram.com/blockchainkgp/"
-            className="rounded border p-3 font-bold text-white hover:text-green-400 hover:border-green-400"
+            className="rounded border p-3 font-bold text-white hover:border-green-400 hover:text-green-400"
           >
             <div className="flex items-center">
-              <div className="bg-[rgb(21,26,33)] p-4 rounded-full">
+              <div className="rounded-full bg-[rgb(21,26,33)] p-4">
                 <RiInstagramFill className="text-2xl" />
               </div>
               <span className="px-5">Instagram</span>
@@ -46,10 +46,10 @@ const Footer = () => {
           </a>
           <a
             href="https://www.facebook.com/blockchainkgp"
-            className="rounded border p-3 font-bold text-white hover:text-green-400 hover:border-green-400"
+            className="rounded border p-3 font-bold text-white hover:border-green-400 hover:text-green-400"
           >
             <div className="flex items-center">
-              <div className="bg-[#151a21] p-4 rounded-full">
+              <div className="rounded-full bg-[#151a21] p-4">
                 <FaFacebook className="text-2xl" />
               </div>
               <span className="px-5">Facebook</span>
@@ -58,10 +58,10 @@ const Footer = () => {
           </a>
           <a
             href="https://discord.gg/Pwrv4Vzx"
-            className="rounded border p-3 font-bold text-white hover:text-green-400 hover:border-green-400"
+            className="rounded border p-3 font-bold text-white hover:border-green-400 hover:text-green-400"
           >
             <div className="flex items-center">
-              <div className="bg-[#151a21] p-4 rounded-full">
+              <div className="rounded-full bg-[#151a21] p-4">
                 <FaDiscord className="text-2xl" />
               </div>
               <span className="px-5">Discord</span>
@@ -70,10 +70,10 @@ const Footer = () => {
           </a>
           <a
             href="https://chat.whatsapp.com/EBtsUCmzHRICqtOlXHzk2J"
-            className="rounded border p-3 font-bold text-white hover:text-green-400 hover:border-green-400"
+            className="rounded border p-3 font-bold text-white hover:border-green-400 hover:text-green-400"
           >
             <div className="flex items-center">
-              <div className="bg-[#151a21] p-4 rounded-full">
+              <div className="rounded-full bg-[#151a21] p-4">
                 <IoLogoWhatsapp className="text-2xl" />
               </div>
               <span className="px-5">Whatsapp</span>
@@ -83,22 +83,22 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-between py-10">
-        <div className="col-span-full hidden lg:col-span-1 lg:block w-[30%]">
-          <h1 className="block font-bold text-2xl text-gray-100 font-inter">
+        <div className="col-span-full hidden w-[30%] lg:col-span-1 lg:block">
+          <h1 className="block font-inter text-2xl font-bold text-gray-100">
             Kharagpur <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-cyan-500">
+            <span className="bg-gradient-to-r from-green-500 to-cyan-500 bg-clip-text text-transparent">
               Blockchain
             </span>
             <br />
             Society
           </h1>
-          <p className="text-[#66798a] mt-4">
+          <p className="mt-4 text-[#66798a]">
             A student-run society promoting the use of web3 technologies
           </p>
         </div>
         <div>
-          <h2 className="font-bold text-2xl">Quick links</h2>
-          <div className="flex flex-col gap-2 mt-2 text-[#66798a]">
+          <h2 className="text-2xl font-bold">Quick links</h2>
+          <div className="mt-2 flex flex-col gap-2 text-[#66798a]">
             <Link href="/" className="hover:text-green-400">
               <RiArrowDropRightLine className="inline-flex" />
               Home
@@ -127,10 +127,10 @@ const Footer = () => {
           <p className="text-[#66798a]">kgpchain@gmail.com</p>
         </div>
       </div>
-      <div className="text-center border-t py-4">
+      <div className="border-t py-4 text-center">
         <p className="text-[#66798a]">&copy; 2024 KBS. All rights reserved.</p>
       </div>
-      <div className="absolute z-[-1] left-[10rem] -bottom-[50%] w-[74%] h-full  green__gradient"></div>
+      <div className="green__gradient absolute -bottom-[50%] left-[10rem] z-[-1] h-full  w-[74%]"></div>
     </footer>
   );
 };

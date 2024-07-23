@@ -40,39 +40,18 @@ const EventItem = ({ event }: { event: Event }) => {
 };
 const EventsContainer = () => {
   const events: Event[] = [
-    {
-      date: "1 Aug, 2023",
-      title: "CryptoCraft: Navigating the Blockchain Frontier",
-      src: "ss.png",
-      description:
-        "Join us for an immersive workshop series, exploring the intricacies and innovation of blockchain technology. Unleash your crypto curiosity!",
-      speaker: {
-        name: "Prakhar Jain",
-        image:
-          "https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8auto=format&fit=facearea&facepad=3&w=320&h=320&q=80",
-      },
-    },
-    {
-      date: "10 September, 2023",
-      title: "Web3 Nexus: Bridging Realities, Transforming Futures",
-      src: "ss.png",
-      description:
-        "A convergence of minds and ideas, where web3 enthusiasts connect to shape the decentralized future. Explore, learn, and innovate.",
-      speaker: {
-        name: "Prakhar Jain",
-        image: "",
-      },
-    },
-    {
-      date: "31 Jul, 2023",
-      title: "Founding of the Society",
-      description: "Some Enthusiast people founded the society.",
-      src: "ss.png",
-      speaker: {
-        name: "Prakhar Jain",
-        image: "",
-      },
-    },
+    // {
+    //   date: "1 Aug, 2023",
+    //   title: "CryptoCraft: Navigating the Blockchain Frontier",
+    //   src: "ss.png",
+    //   description:
+    //     "Join us for an immersive workshop series, exploring the intricacies and innovation of blockchain technology. Unleash your crypto curiosity!",
+    //   speaker: {
+    //     name: "Prakhar Jain",
+    //     image:
+    //       "https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8auto=format&fit=facearea&facepad=3&w=320&h=320&q=80",
+    //   },
+    // },
   ];
 
   return (
